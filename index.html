@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="http://fonts.googleapis.com/css?family=Crete+Round"
+			rel="stylesheet"
+		/>
+		<title>brianfarnier.dev</title>
+	</head>
+	<script src="index.js" defer></script>
+
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1>B F</h1>
+				<nav>
+					<button class="burger" aria-label="Ouvrir le menu">
+						☰
+					</button>
+					<ul>
+						<li><a href="#home">ACCEUIL</a></li>
+						<li><a href="#about">A PROPOS</a></li>
+						<li><a href="#projet">PROJETS</a></li>
+						<li><a href="#skills">COMPETENCES </a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="home">
+			<div class="container-home">
+				<h2>
+					Brian Farnier
+					<strong>Developpeur Junior</strong>
+				</h2>
+				<div class="image-profil"></div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="propos">
+				<h3>À PROPOS</h3>
+				<p>
+					Bonjour, je suis un développeur junior web français, vivant
+					à Montpellier. Passionné par le développement web, j'adore
+					explorer de nouvelles technologies web et je suis toujours
+					en quête de nouvelles compétences à acquérir.
+				</p>
+				<a href="#" target="_blank" class="btn-propos"
+					>En savoir plus</a
+				>
+			</div>
+			<div class="socials-links">
+				<h3>RESEAUX</h3>
+				<div class="github-icon">
+					<a
+						href="https://github.com/Disl11"
+						target="_blank"
+						class="text-link"
+					>
+						<img
+							src="image/github.png"
+							alt="Github-icon"
+							width="20"
+						/>
+						Github
+					</a>
+				</div>
+				<div class="linkedin-icon">
+					<a
+						href="https://www.linkedin.com/in/brian-farnier-353524307/"
+						target="_blank"
+						class="text-link"
+					>
+						<img
+							src="image/linkedin.webp"
+							alt="Linkedin-icon"
+							width="20"
+						/>
+						Linkedin
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="projet">
+			<div class="title-projet">
+				<h3>PROJETS</h3>
+			</div>
+			<div class="projet-box">
+				<div class="project-1 box">
+					<p>1 mot internet</p>
+					<img src="image/breakdance.jpeg" />
+				</div>
+				<div class="project-2 box">
+					<p>Projet beWeb</p>
+					<img src="image/portfolio-photo.jpg" />
+				</div>
+				<div class="project-3 box">
+					<p>Portefolio</p>
+					<img src="image/a venir.avif" />
+				</div>
+			</div>
+		</section>
+		<section id="Skills">
+			<div>
+				<h3>COMPETENCES</h3>
+			</div>
+			<div class="titres-skills">
+				<div>
+					<h4>FRONT-END</h4>
+					<img src="image/html.png" alt="icon html" />
+					<img src="image/css.png" alt="icon css" />
+				</div>
+				<div>
+					<h4>BACK-END</h4>
+					<img src="image/java.webp" alt="icon java" />
+				</div>
+			</div>
+		</section>
+		<section id="Contact">
+			<div class="contact-me">
+				<div>
+					<h3>CONTACTEZ-MOI</h3>
+				</div>
+				<form>
+					<label for="name">Nom</label>
+					<input type="text" id="name" placeholder="Votre nom" />
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="Votre email" />
+					<label for="message">Message :</label>
+					<textarea
+						id="message"
+						name="message"
+						rows="5"
+						required
+					></textarea>
+					<input type="submit" value="Envoyer" class="button-3" />
+				</form>
+			</div>
+		</section>
+		<footer>
+			<p>Brian Farnier</p>
+		</footer>
+	</body>
+</html>
