@@ -1,147 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<link
-			href="http://fonts.googleapis.com/css?family=Crete+Round"
-			rel="stylesheet"
-		/>
-		<title>brianfarnier.dev</title>
-	</head>
-	<script src="index.js" defer></script>
+<html lang="fr">
 
-	<body>
-		<header>
-			<div class="wrapper">
-				<h1>B F</h1>
-				<nav>
-					<button class="burger" aria-label="Ouvrir le menu">
-						☰
-					</button>
-					<ul>
-						<li><a href="#home">ACCEUIL</a></li>
-						<li><a href="#about">A PROPOS</a></li>
-						<li><a href="#projet">PROJETS</a></li>
-						<li><a href="#skills">COMPETENCES </a></li>
-						<li><a href="#contact">CONTACT</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<section id="home">
-			<div class="container-home">
-				<h2>
-					Brian Farnier
-					<strong>Developpeur Junior</strong>
-				</h2>
-				<div class="image-profil"></div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Brian Farnier | Développeur Web</title>
+
+	<meta name="description" content="Portfolio de Brian Farnier, développeur web junior à Montpellier." />
+
+	<!-- Tailwind CDN (pour démarrer rapidement) -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="bg-[#061423] text-white font-sans text-lg">
+
+	<!-- HEADER -->
+	<header class="w-full py-4 border-b border-white/10">
+		<div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+
+			<h1 class="font-serif text-2xl tracking-widest">B F</h1>
+
+			<nav aria-label="Navigation principale">
+				<button id="menu-btn" class="md:hidden text-orange-300 text-3xl">
+					☰
+				</button>
+				<ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
+					<li><a class="hover:text-white transition" href="#about">À propos</a></li>
+					<li><a class="hover:text-white transition" href="#projet">Projets</a></li>
+					<li><a class="hover:text-white transition" href="#skills">Compétences</a></li>
+					<li><a class="hover:text-white transition" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<ul id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10
+           transform translate-x-full transition duration-300 md:hidden">
+
+				<li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
+					<a class="menu-link" href="#about">À propos</a>
+					<a class="menu-link" href="#projet">Projets</a>
+					<a class="menu-link" href="#skills">Compétences</a>
+					<a class="menu-link" href="#contact">Contact</a>
+				</li>
+
+			</ul>
+
+		</div>
+	</header>
+
+	<!-- HERO -->
+	<main>
+
+		<section id="home" class="max-w-6xl mx-auto px-4 py-16">
+			<div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0">
+
+				<!-- TEXTE -->
+				<h1 class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out
+               text-4xl md:text-6xl font-serif leading-tight">
+					Brian Farnier <br>
+					<span class="text-3xl md:text-4xl font-bold text-orange-300 mb-10">
+						Développeur Junior
+					</span>
+				</h1>
+
+				<!-- IMAGE -->
+				<div class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out delay-200
+                w-40 h-40 md:w-52 md:h-52 rounded-[40px_100px_20px_100px] overflow-hidden">
+					<img src="./image/unnamed.jpg" alt="Photo de Brian Farnier" class="w-full h-full object-cover">
+				</div>
+
 			</div>
 		</section>
-		<section id="about">
-			<div class="propos">
-				<h3>À PROPOS</h3>
-				<p>
-					Bonjour, je suis un développeur junior web français, vivant
-					à Montpellier. Passionné par le développement web, j'adore
-					explorer de nouvelles technologies web et je suis toujours
-					en quête de nouvelles compétences à acquérir.
+
+		<!-- ABOUT -->
+		<section id="about" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-20 md:gap-64">
+
+			<div class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out md:col-span-2">
+				<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-10">À PROPOS</h2>
+				<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
+					Après 12 ans d'expérience en tant que tailleur de pierre, j’ai entamé une reconversion dans le
+					développement web et mobile et je suis aujourd’hui développeur full stack junior.
+					Motivé et curieux, je cherche à mettre mes compétences à profit tout en continuant à apprendre.
 				</p>
-				<a href="#" target="_blank" class="btn-propos"
-					>En savoir plus</a
-				>
+
+				<a href="#"
+					class="inline-block bg-orange-300 text-[#061423] px-4 py-2 rounded-lg font-bold hover:bg-white transition">
+					En savoir plus
+				</a>
 			</div>
-			<div class="socials-links">
-				<h3>RESEAUX</h3>
-				<div class="github-icon">
-					<a
-						href="https://github.com/Disl11"
-						target="_blank"
-						class="text-link"
-					>
-						<img
-							src="image/github.png"
-							alt="Github-icon"
-							width="20"
-						/>
-						Github
+
+			<div class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out">
+				<h3 class="text-2xl md:text-3xl font-bold text-orange-300 mb-10">RÉSEAUX</h3>
+
+				<div class="space-y-4">
+
+					<a href="https://github.com/Disl11" target="_blank"
+						class="flex items-center gap-3 hover:text-orange-300 transition">
+						<img src="image/github.png" class="w-8 h-8" alt="GitHub">
+						GitHub
 					</a>
-				</div>
-				<div class="linkedin-icon">
-					<a
-						href="https://www.linkedin.com/in/brian-farnier-353524307/"
-						target="_blank"
-						class="text-link"
-					>
-						<img
-							src="image/linkedin.webp"
-							alt="Linkedin-icon"
-							width="20"
-						/>
-						Linkedin
+
+					<a href="https://www.linkedin.com/in/brian-farnier-353524307/" target="_blank"
+						class="flex items-center gap-3 hover:text-orange-300 transition">
+						<img src="image/linkedin.webp" class="w-8 h-8" alt="LinkedIn">
+						LinkedIn
 					</a>
+
 				</div>
 			</div>
+
 		</section>
-		<section id="projet">
-			<div class="title-projet">
-				<h3>PROJETS</h3>
+
+		<!-- PROJETS -->
+		<section id="projet" class="max-w-6xl mx-auto px-4 py-16">
+
+			<h2
+				class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-outtext-2xl md:text-3xl font-bold text-orange-300 mb-10">
+				PROJETS</h2>
+
+			<div
+				class="  reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out flex flex-col gap-8 items-center">
+
+				<!-- PROJET 1 -->
+				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
+					<img src="image/breakdance.jpeg"
+						class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Projet 1">
+					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
+					<p
+						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
+						1 mot internet
+					</p>
+				</div>
+
+				<!-- PROJET 2 -->
+				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
+					<img src="image/portfolio-photo.jpg"
+						class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+						alt="Projet BeWeb">
+					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
+					<p
+						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
+						Projet BeWeb
+					</p>
+				</div>
+
+				<!-- PROJET 3 -->
+				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition">
+					<img src="image/a venir.avif"
+						class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+						alt="Projet à venir">
+					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
+					<p
+						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
+						Portfolio
+					</p>
+				</div>
 			</div>
-			<div class="projet-box">
-				<div class="project-1 box">
-					<p>1 mot internet</p>
-					<img src="image/breakdance.jpeg" />
-				</div>
-				<div class="project-2 box">
-					<p>Projet beWeb</p>
-					<img src="image/portfolio-photo.jpg" />
-				</div>
-				<div class="project-3 box">
-					<p>Portefolio</p>
-					<img src="image/a venir.avif" />
-				</div>
-			</div>
+
 		</section>
-		<section id="Skills">
-			<div>
-				<h3>COMPETENCES</h3>
+
+		<!-- SKILLS -->
+		<section id="skills"
+			class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-6xl mx-auto px-4 py-16">
+
+			<!-- TITRE -->
+			<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-12">
+				COMPÉTENCES
+			</h2>
+			<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
+				Je suis actuellement le plus à l’aise avec JavaScript, Python, Flutter et SQLite.
+			</p>
+			<!-- GRID COMPÉTENCES -->
+			<div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-16 text-center">
+
+
+				<!-- FRONT-END -->
+				<div>
+					<h3 class="mb-6 font-bold text-xl md:text-2xl">FRONT-END</h3>
+					<div class="flex justify-center gap-6">
+
+						<i class="devicon-javascript-plain colored text-5xl "></i>
+						<i class="devicon-react-original colored text-5xl "></i>
+					</div>
+				</div>
+
+				<!-- BACK-END -->
+				<div>
+					<h3 class="mb-6 font-bold text-xl md:text-2xl">BACK-END</h3>
+					<div class="flex justify-center gap-6">
+						<i class="devicon-nodejs-plain colored text-5xl "></i>
+						<i class="devicon-symfony-original text-5xl"></i>
+						<i class="devicon-python-plain colored text-5xl "></i>
+					</div>
+				</div>
+
+				<!-- MOBILE -->
+				<div>
+					<h3 class="mb-6 font-bold text-xl md:text-2xl">MOBILE</h3>
+					<div class="flex justify-center">
+						<i class="devicon-flutter-plain colored text-5xl "></i>
+					</div>
+				</div>
+
+				<!-- DATABASE -->
+				<div>
+					<h3 class="mb-6 font-bold text-xl md:text-2xl">DATABASE</h3>
+					<div class="flex justify-center gap-6">
+						<i class="devicon-mysql-plain colored text-5xl "></i>
+						<i class="devicon-sqlite-plain colored text-5xl "></i>
+					</div>
+				</div>
+
+				<!-- VERSIONING -->
+				<div>
+					<h3 class="mb-6 font-bold text-xl md:text-2xl">VERSIONING</h3>
+					<div class="flex justify-center gap-6">
+						<i class="devicon-git-plain colored text-5xl "></i>
+						<i class="devicon-github-original text-5xl "></i>
+					</div>
+				</div>
 			</div>
-			<div class="titres-skills">
-				<div>
-					<h4>FRONT-END</h4>
-					<img src="image/html.png" alt="icon html" />
-					<img src="image/css.png" alt="icon css" />
+			<section id="veille" class="max-w-6xl mx-auto px-4 py-16">
+
+				<!-- TITRE -->
+				<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-12">
+					VEILLE TECHNIQUE
+				</h2>
+
+				<!-- CONTENU -->
+				<div class="flex flex-col items-center text-center gap-6">
+
+					<!-- JAVA ICON -->
+					<i class="devicon-java-plain colored text-6xl hover:scale-110 transition"></i>
+
+					<!-- TEXTE -->
+					<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
+						Veille régulière sur Java : compréhension du langage, amélioration des bonnes pratiques
+						et exploration de ses écosystèmes backend.
+					</p>
+
 				</div>
-				<div>
-					<h4>BACK-END</h4>
-					<img src="image/java.webp" alt="icon java" />
-				</div>
-			</div>
-		</section>
-		<section id="Contact">
-			<div class="contact-me">
-				<div>
-					<h3>CONTACTEZ-MOI</h3>
-				</div>
-				<form>
-					<label for="name">Nom</label>
-					<input type="text" id="name" placeholder="Votre nom" />
-					<label for="email">Email</label>
-					<input type="text" id="email" placeholder="Votre email" />
-					<label for="message">Message :</label>
-					<textarea
-						id="message"
-						name="message"
-						rows="5"
-						required
-					></textarea>
-					<input type="submit" value="Envoyer" class="button-3" />
+
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact"
+				class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-3xl mx-auto px-4 py-16">
+
+				<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-10">CONTACT</h2>
+
+				<form class="space-y-4">
+
+					<input type="text" placeholder="Nom" class="w-full p-3 rounded bg-white/10 outline-none">
+
+					<input type="email" placeholder="Email" class="w-full p-3 rounded bg-white/10 outline-none">
+
+					<textarea placeholder="Message" class="w-full p-3 rounded bg-white/10 outline-none h-32"></textarea>
+
+					<button type="submit"
+						class="bg-orange-300 text-[#061423] px-6 py-2 rounded font-bold hover:bg-white transition">
+						Envoyer
+					</button>
+
 				</form>
-			</div>
-		</section>
-		<footer>
-			<p>Brian Farnier</p>
-		</footer>
-	</body>
+			</section>
+
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="text-center py-6 border-t border-white/10">
+		<p class="text-white/60">Brian Farnier</p>
+	</footer>
+	<script src="index.js"></script>
+</body>
+
 </html>
