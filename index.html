@@ -30,7 +30,7 @@
 					☰
 				</button>
 				<ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
-					<li><a class="hover:text-white transition" href="#about">À propos</a></li>
+					<li><a class="hover:text-white transition" href="/about.html">À propos</a></li>
 					<li><a class="hover:text-white transition" href="#projet">Projets</a></li>
 					<li><a class="hover:text-white transition" href="#skills">Compétences</a></li>
 					<li><a class="hover:text-white transition" href="#contact">Contact</a></li>
@@ -41,7 +41,7 @@
            transform translate-x-full transition duration-300 md:hidden">
 
 				<li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
-					<a class="menu-link" href="#about">À propos</a>
+					<a class="menu-link" href="/about.html">À propos</a>
 					<a class="menu-link" href="#projet">Projets</a>
 					<a class="menu-link" href="#skills">Compétences</a>
 					<a class="menu-link" href="#contact">Contact</a>
@@ -87,7 +87,7 @@
 					Motivé et curieux, je cherche à mettre mes compétences à profit tout en continuant à apprendre.
 				</p>
 
-				<a href="#"
+				<a href="about.html"
 					class="inline-block bg-orange-300 text-[#061423] px-4 py-2 rounded-lg font-bold hover:bg-white transition">
 					En savoir plus
 				</a>
@@ -126,15 +126,21 @@
 				class="  reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out flex flex-col gap-8 items-center">
 
 				<!-- PROJET 1 -->
-				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
-					<img src="image/breakdance.jpeg"
-						class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Projet 1">
+
+				<div
+					class="project-card relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition cursor-pointer">
+					<img src="image/logo_uji.png"
+						class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+						alt="Projet un jour internet">
+
 					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
+
 					<p
 						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
 						1 mot internet
 					</p>
 				</div>
+
 
 				<!-- PROJET 2 -->
 				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
@@ -185,6 +191,7 @@
 
 						<i class="devicon-javascript-plain colored text-5xl "></i>
 						<i class="devicon-react-original colored text-5xl "></i>
+						<i class="devicon-nextjs-plain text-5xl"></i>
 					</div>
 				</div>
 

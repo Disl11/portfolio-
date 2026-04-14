@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Brian Farnier</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#061423] text-white">
+    <!-- HEADER -->
+    <header class="w-full py-4 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+
+            <h1 class="font-serif text-2xl tracking-widest">B F</h1>
+
+            <nav aria-label="Navigation principale">
+                <button id="menu-btn" class="md:hidden text-orange-300 text-3xl">
+                    ☰
+                </button>
+
+                <!-- MODIFIÉ ICI -->
+                <ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
+                    <li><a class="hover:text-white transition" href="index.html">Accueil</a></li>
+                    <li><a class="hover:text-white transition" href="about.html">À propos</a></li>
+                    <li><a class="hover:text-white transition" href="index.html#projet">Projets</a></li>
+                    <li><a class="hover:text-white transition" href="index.html#skills">Compétences</a></li>
+                    <li><a class="hover:text-white transition" href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- MODIFIÉ ICI -->
+            <ul id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10
+           transform translate-x-full transition duration-300 md:hidden">
+
+                <li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
+                    <a class="menu-link" href="index.html">Accueil</a>
+                    <a class="menu-link" href="about.html">À propos</a>
+                    <a class="menu-link" href="index.html#projet">Projets</a>
+                    <a class="menu-link" href="index.html#skills">Compétences</a>
+                    <a class="menu-link" href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="max-w-5xl mx-auto px-4 py-10 text-center">
+
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Brian Farnier
+        </h1>
+
+        <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+            Développeur web/mobile junior, basé à Montpellier.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-8">
+
+            <span
+                class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-sm md:text-base">
+                Python
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-gray-500/20 text-gray-300 border border-gray-400/30 text-sm md:text-base">
+                Next.js
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-400/30 text-sm md:text-base">
+                JavaScript
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-red-500/20 text-red-300 border border-red-400/30 text-sm md:text-base">
+                Java (bases)
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/30 text-sm md:text-base">
+                Docker
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-purple-500/20 text-purple-300 border border-purple-400/30 text-sm md:text-base">
+                Flutter
+            </span>
+        </div>
+
+        <a href="resource/CV_Brian_farnier_(5).pdf" download class="inline-block mt-8 px-6 py-3 bg-orange-300 text-[#061423] font-bold rounded-lg
+              hover:bg-white transition">
+            Télécharger mon CV
+        </a>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="max-w-5xl mx-auto px-4 py-10">
+
+        <h2 class="text-2xl text-orange-300 mb-6">Mon parcours</h2>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-4">
+            Tailleur de pierre pendant 12 ans, j’ai développé des compétences en rigueur,
+            précision et travail en équipe à travers des projets exigeants principalement dans le luxe.
+            J’ai obtenu un Brevet Professionnel (BP) auprès des Compagnons du Devoir,
+            une formation qui m’a permis d’atteindre un haut niveau d’exigence et de savoir-faire.
+        </p>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-4">
+            En 2019-2020, j’ai effectué un PVT de 8 mois en Australie.
+            Parti sans véritable niveau en anglais, cette expérience m’a permis de développer
+            une capacité d’adaptation et d’améliorer significativement mes compétences linguistiques,
+            atteignant aujourd’hui un niveau intermédiaire.
+        </p>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed">
+            En 2025, j’ai entrepris une reconversion dans le développement web et mobile
+            en suivant une formation de juin à avril.
+            Aujourd’hui, je poursuis mon apprentissage et développe mes compétences
+            à travers des projets.
+        </p>
+
+    </section>
+
+    <!-- MÉTHODE -->
+    <section class="max-w-5xl mx-auto px-4 py-10">
+
+        <h2 class="text-2xl text-orange-300 mb-6">Ma façon de travailler</h2>
+        <p class="text-white/80 text-lg md:text-xl  leading-relaxed mb-4">
+            J’essaie de produire un code propre, lisible et maintenable, tout en cherchant à progresser sur les bonnes
+            pratiques.
+            Lorsqu’un problème survient, je n’hésite pas à échanger afin de mieux comprendre et
+            avancer efficacement.
+        </p>
+
+        <p class="text-white/80  text-lg md:text-xl leading-relaxed">
+            Lors de ma formation, j’ai été initié aux méthodes Agile, notamment Scrum et Kanban.
+            J’ai pu les mettre en pratique au sein de projets d’équipe, avec des réunions quotidiennes (daily meetings),
+            une organisation en sprints et une gestion des tâches via des tableaux de suivi,
+            notamment durant mon stage au sein de l’association ICATY.
+        </p>
+
+    </section>
+
+    <!-- OBJECTIFS -->
+    <section class="max-w-5xl mx-auto px-4 py-16">
+
+        <h2 class="text-2xl text-orange-300 mb-6">Mes objectifs</h2>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed">
+            La taille de pierre m’a permis de développer une approche basée sur la précision, la rigueur et la recherche
+            d’un résultat propre et soigné.
+            Ce qui m’anime aujourd’hui dans le développement, c’est de comprendre comment concevoir des solutions
+            claires, structurées et efficaces.
+            Je suis en constant apprentissage, mais déjà capable de contribuer sur des projets concrets.
+            Je cherche aujourd’hui une entreprise où je pourrai évoluer tout en contribuant activement aux projets.
+        </p>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-16">
+
+        <h2 class="text-2xl text-orange-300 mb-6">Hobbies</h2>
+
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- SPANS (GAUCHE) -->
+            <div class="flex flex-wrap gap-3 flex-1">
+
+                <span class="px-4 py-2 rounded-full bg-white/10 text-white/80 border border-white/10">
+                    Badminton (compétition)
+                </span>
+
+                <span class="px-4 py-2 rounded-full bg-white/10 text-white/80 border border-white/10">
+                    Breakdance (battles et chorégraphies)
+                </span>
+
+                <span class="px-4 py-2 rounded-full bg-white/10 text-white/80 border border-white/10">
+                    Professeur de breakdance
+                </span>
+
+            </div>
+
+            <!-- IMAGE (DROITE) -->
+            <div class="flex-1 flex justify-center">
+                <img src="image/breakdance.jpeg" alt="Breakdance en performance"
+                    class="w-full max-w-sm rounded-xl shadow-xl object-cover border border-white/10">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer class="text-center py-6 border-t border-white/10">
+        <p class="text-white/60">Brian Farnier</p>
+    </footer>
+</body>
+
+</html>

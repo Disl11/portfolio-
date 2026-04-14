@@ -48,3 +48,8 @@ const blblb = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 reveals.forEach(el => observer.observe(el));
+
+
+document.querySelector(".project-card").addEventListener("click", () => {
+    window.location.href = "UnJourInternet.html";
+});
