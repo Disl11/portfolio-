@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#061423] text-white">
+    <!-- HEADER -->
+    <header class="w-full py-4 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+
+            <h1 class="font-serif text-2xl tracking-widest">B F</h1>
+
+            <nav aria-label="Navigation principale">
+                <button id="menu-btn" class="md:hidden text-orange-300 text-3xl">
+                    ☰
+                </button>
+
+                <!-- MODIFIÉ ICI -->
+                <ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
+                    <li><a class="hover:text-white transition" href="/index.html">Accueil</a></li>
+                    <li><a class="hover:text-white transition" href="/about/about.html">À propos</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#projet">Projets</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#skills">Compétences</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- MODIFIÉ ICI -->
+            <ul id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10
+           transform translate-x-full transition duration-300 md:hidden">
+
+                <li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
+                    <a class="menu-link" href="/index.html">Accueil</a>
+                    <a class="menu-link" href="/about/about.html">À propos</a>
+                    <a class="menu-link" href="/index.html#projet">Projets</a>
+                    <a class="menu-link" href="/index.html#skills">Compétences</a>
+                    <a class="menu-link" href="/index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
+    <section class="max-w-5xl mx-auto px-4 py-10 text-center">
+
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Portfolio
+        </h1>
+
+        <!-- <div class="flex justify-center">
+            <img src="image/logo_uji.png" alt="Stack du projet"
+                class="w-full max-w-md rounded-xl shadow-lg mb-6 object-contain">
+        </div> -->
+
+        <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+            Stack utilisée sur le projet
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-8">
+
+            <span
+                class="px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-400/30 text-sm md:text-base">
+                Html / CSS / JavaScript
+            </span>
+
+            <span
+                class="px-4 py-2 rounded-full bg-green-500/20 text-green-300 border border-green-400/30 text-sm md:text-base">
+                Tailwind
+            </span>
+        </div>
+
+    </section>
+
+    <!-- Le projet  -->
+    <section class="max-w-6xl mx-auto px-4 py-10">
+
+        <h2 class="text-2xl text-orange-300 mb-6 md:text-3xl font-bold text-orange-300 mb-10">Le projet</h2>
+
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- TEXTE -->
+            <p class="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl">
+                Lors de mon stage au sein de l’association ICATY, j’ai participé au développement d’une application
+                mobile
+                et web complète dans un contexte réel de situation client/développeur.
+                Ma mission principale était de concevoir l’application « Un jour internet », de la conception jusqu’au
+                déploiement.
+
+                J’ai travaillé sur le back-end avec la création d’une API et la gestion de la base de données, ainsi que
+                sur
+                le front-end mobile et le back-office web destiné aux administrateurs.
+
+                Cette application a pour objectif de sensibiliser les personnes âgées aux usages du numérique et de
+                renforcer leur sécurité en ligne.
+
+                Elle propose un mot par jour, accompagné d’une explication simple et accessible.
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

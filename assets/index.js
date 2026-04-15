@@ -2,6 +2,9 @@ const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");
 const links = document.querySelectorAll(".menu-link");
 
+
+
+//Menu burger
 btn.addEventListener("click", () => {
     menu.classList.toggle("translate-x-full");
 });
@@ -12,6 +15,9 @@ links.forEach(link => {
     });
 });
 
+
+
+//Apparrition des section quand l'utilisateur arrive au niveau 
 const elements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
@@ -51,5 +57,13 @@ reveals.forEach(el => observer.observe(el));
 
 
 document.querySelector(".project-card").addEventListener("click", () => {
-    window.location.href = "UnJourInternet.html";
+    window.location.href = "/projects/UnJourInternet.html";
+});
+
+document.querySelector(".project-portfolio").addEventListener("click", () => {
+    window.location.href = "/projects/portfolio.html";
+});
+
+document.querySelector(".project-brakdanet").addEventListener("click", () => {
+    window.location.href = "/projects/BreakDaNet.html";
 });

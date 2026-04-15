@@ -30,7 +30,7 @@
 					☰
 				</button>
 				<ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
-					<li><a class="hover:text-white transition" href="/about.html">À propos</a></li>
+					<li><a class="hover:text-white transition" href="about/about.html">À propos</a></li>
 					<li><a class="hover:text-white transition" href="#projet">Projets</a></li>
 					<li><a class="hover:text-white transition" href="#skills">Compétences</a></li>
 					<li><a class="hover:text-white transition" href="#contact">Contact</a></li>
@@ -41,7 +41,7 @@
            transform translate-x-full transition duration-300 md:hidden">
 
 				<li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
-					<a class="menu-link" href="/about.html">À propos</a>
+					<a class="menu-link" href="about/about.html">À propos</a>
 					<a class="menu-link" href="#projet">Projets</a>
 					<a class="menu-link" href="#skills">Compétences</a>
 					<a class="menu-link" href="#contact">Contact</a>
@@ -143,26 +143,28 @@
 
 
 				<!-- PROJET 2 -->
-				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
+				<div
+					class="project-portfolio relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
 					<img src="image/portfolio-photo.jpg"
 						class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-						alt="Projet BeWeb">
+						alt="Projet portfolio">
 					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
 					<p
 						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
-						Projet BeWeb
+						Portfolio
 					</p>
 				</div>
 
 				<!-- PROJET 3 -->
-				<div class="relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition">
+				<div
+					class="project-brakdanet relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition">
 					<img src="image/a venir.avif"
 						class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
 						alt="Projet à venir">
 					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
 					<p
 						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
-						Portfolio
+						Breakdanet
 					</p>
 				</div>
 			</div>
@@ -282,7 +284,7 @@
 	<footer class="text-center py-6 border-t border-white/10">
 		<p class="text-white/60">Brian Farnier</p>
 	</footer>
-	<script src="index.js"></script>
+	<script src="assets/index.js"></script>
 </body>
 
 </html>

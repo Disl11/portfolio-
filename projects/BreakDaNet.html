@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet BreakDaNet</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#061423] text-white">
+    <!-- HEADER -->
+    <header class="w-full py-4 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+
+            <h1 class="font-serif text-2xl tracking-widest">B F</h1>
+
+            <nav aria-label="Navigation principale">
+                <button id="menu-btn" class="md:hidden text-orange-300 text-3xl">
+                    ☰
+                </button>
+
+                <!-- MODIFIÉ ICI -->
+                <ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
+                    <li><a class="hover:text-white transition" href="/index.html">Accueil</a></li>
+                    <li><a class="hover:text-white transition" href="/about/about.html">À propos</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#projet">Projets</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#skills">Compétences</a></li>
+                    <li><a class="hover:text-white transition" href="/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- MODIFIÉ ICI -->
+            <ul id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10
+           transform translate-x-full transition duration-300 md:hidden">
+
+                <li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
+                    <a class="menu-link" href="/index.html">Accueil</a>
+                    <a class="menu-link" href="/about/about.html">À propos</a>
+                    <a class="menu-link" href="/index.html#projet">Projets</a>
+                    <a class="menu-link" href="/index.html#skills">Compétences</a>
+                    <a class="menu-link" href="/index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
+
+</body>
+
+</html>
