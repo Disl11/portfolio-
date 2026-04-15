@@ -56,14 +56,23 @@ const blblb = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 
-document.querySelector(".project-card").addEventListener("click", () => {
-    window.location.href = "/projects/UnJourInternet.html";
-});
+const projectCard = document.querySelector(".project-card");
+if (projectCard) {
+    projectCard.addEventListener("click", () => {
+        window.location.href = "/projects/UnJourInternet.html";
+    });
+}
 
-document.querySelector(".project-portfolio").addEventListener("click", () => {
-    window.location.href = "/projects/portfolio.html";
-});
+const projectPortfolio = document.querySelector(".project-portfolio");
+if (projectPortfolio) {
+    projectPortfolio.addEventListener("click", () => {
+        window.location.href = "/projects/portfolio.html";
+    });
+}
 
-document.querySelector(".project-brakdanet").addEventListener("click", () => {
-    window.location.href = "/projects/BreakDaNet.html";
-});
+const projectBrakdanet = document.querySelector(".project-brakdanet");
+if (projectBrakdanet) {
+    projectBrakdanet.addEventListener("click", () => {
+        window.location.href = "/projects/BreakDaNet.html";
+    });
+}

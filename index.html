@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
-<body class="bg-[#061423] text-white font-sans text-lg">
+<body class="bg-[#061423] text-white font-sans text-lg ">
 
 	<!-- HEADER -->
 	<header class="w-full py-4 border-b border-white/10">
@@ -30,35 +30,31 @@
 					☰
 				</button>
 				<ul id="menu" class="hidden md:flex gap-6 text-orange-300 font-medium">
-					<li><a class="hover:text-white transition" href="about/about.html">À propos</a></li>
+					<li><a class="hover:text-white transition" href="/about/about.html">À propos</a></li>
 					<li><a class="hover:text-white transition" href="#projet">Projets</a></li>
 					<li><a class="hover:text-white transition" href="#skills">Compétences</a></li>
 					<li><a class="hover:text-white transition" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 
-			<ul id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10
-           transform translate-x-full transition duration-300 md:hidden">
-
+			<ul id="mobile-menu"
+				class="fixed top-0 right-0 h-full w-64 bg-[#061423] border-l border-white/10 transform translate-x-full transition duration-300 md:hidden z-50">
 				<li class="flex flex-col gap-6 p-8 mt-16 text-orange-300 font-medium">
-					<a class="menu-link" href="about/about.html">À propos</a>
+					<a class="menu-link" href="/about/about.html">À propos</a>
 					<a class="menu-link" href="#projet">Projets</a>
 					<a class="menu-link" href="#skills">Compétences</a>
 					<a class="menu-link" href="#contact">Contact</a>
 				</li>
-
 			</ul>
-
 		</div>
 	</header>
 
 	<!-- HERO -->
 	<main>
 
-		<section id="home" class="max-w-6xl mx-auto px-4 py-16">
+		<section id="home" class="max-w-6xl mx-auto px-4 py-12">
 			<div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0">
 
-				<!-- TEXTE -->
 				<h1 class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out
                text-4xl md:text-6xl font-serif leading-tight">
 					Brian Farnier <br>
@@ -67,16 +63,17 @@
 					</span>
 				</h1>
 
-				<!-- IMAGE -->
+
 				<div class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out delay-200
                 w-40 h-40 md:w-52 md:h-52 rounded-[40px_100px_20px_100px] overflow-hidden">
-					<img src="./image/unnamed.jpg" alt="Photo de Brian Farnier" class="w-full h-full object-cover">
+					<img src="/image/unnamed.jpg" alt="Photo de Brian Farnier"
+						class="w-full h-full object-cover object-center scale-105">
 				</div>
 
 			</div>
 		</section>
 
-		<!-- ABOUT -->
+
 		<section id="about" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-20 md:gap-64">
 
 			<div class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out md:col-span-2">
@@ -115,7 +112,7 @@
 
 		</section>
 
-		<!-- PROJETS -->
+
 		<section id="projet" class="max-w-6xl mx-auto px-4 py-16">
 
 			<h2
@@ -125,7 +122,7 @@
 			<div
 				class="  reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out flex flex-col gap-8 items-center">
 
-				<!-- PROJET 1 -->
+
 
 				<div
 					class="project-card relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition cursor-pointer">
@@ -142,7 +139,7 @@
 				</div>
 
 
-				<!-- PROJET 2 -->
+
 				<div
 					class="project-portfolio relative w-full max-w-[700px] h-[150px] overflow-hidden  hover:scale-105 transition">
 					<img src="image/portfolio-photo.jpg"
@@ -151,11 +148,11 @@
 					<div class="absolute inset-0 bg-gradient-to-r from-[#09223bcc] to-transparent"></div>
 					<p
 						class="absolute top-1/2 left-12 -translate-y-1/2 text-white font-bold text-3xl drop-shadow-lg z-10">
-						Portfolio
+						Mon Portfolio
 					</p>
 				</div>
 
-				<!-- PROJET 3 -->
+
 				<div
 					class="project-brakdanet relative w-full max-w-[700px] h-[150px] overflow-hidden hover:scale-105 transition">
 					<img src="image/a venir.avif"
@@ -171,22 +168,22 @@
 
 		</section>
 
-		<!-- SKILLS -->
+
 		<section id="skills"
 			class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-6xl mx-auto px-4 py-16">
 
-			<!-- TITRE -->
+
 			<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-12">
 				COMPÉTENCES
 			</h2>
 			<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
 				Je suis actuellement le plus à l’aise avec JavaScript, Python, Flutter et SQLite.
 			</p>
-			<!-- GRID COMPÉTENCES -->
+
 			<div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-16 text-center">
 
 
-				<!-- FRONT-END -->
+
 				<div>
 					<h3 class="mb-6 font-bold text-xl md:text-2xl">FRONT-END</h3>
 					<div class="flex justify-center gap-6">
@@ -197,7 +194,7 @@
 					</div>
 				</div>
 
-				<!-- BACK-END -->
+
 				<div>
 					<h3 class="mb-6 font-bold text-xl md:text-2xl">BACK-END</h3>
 					<div class="flex justify-center gap-6">
@@ -207,7 +204,7 @@
 					</div>
 				</div>
 
-				<!-- MOBILE -->
+
 				<div>
 					<h3 class="mb-6 font-bold text-xl md:text-2xl">MOBILE</h3>
 					<div class="flex justify-center">
@@ -215,7 +212,7 @@
 					</div>
 				</div>
 
-				<!-- DATABASE -->
+
 				<div>
 					<h3 class="mb-6 font-bold text-xl md:text-2xl">DATABASE</h3>
 					<div class="flex justify-center gap-6">
@@ -224,7 +221,7 @@
 					</div>
 				</div>
 
-				<!-- VERSIONING -->
+
 				<div>
 					<h3 class="mb-6 font-bold text-xl md:text-2xl">VERSIONING</h3>
 					<div class="flex justify-center gap-6">
@@ -233,54 +230,67 @@
 					</div>
 				</div>
 			</div>
-			<section id="veille" class="max-w-6xl mx-auto px-4 py-16">
 
-				<!-- TITRE -->
-				<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-12">
-					VEILLE TECHNIQUE
-				</h2>
+		</section>
+		<section id="veille"
+			class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-6xl mx-auto py-16">
 
-				<!-- CONTENU -->
-				<div class="flex flex-col items-center text-center gap-6">
 
-					<!-- JAVA ICON -->
-					<i class="devicon-java-plain colored text-6xl hover:scale-110 transition"></i>
+			<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-12">
+				VEILLE TECHNIQUE
+			</h2>
 
-					<!-- TEXTE -->
-					<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
-						Veille régulière sur Java : compréhension du langage, amélioration des bonnes pratiques
-						et exploration de ses écosystèmes backend.
-					</p>
 
-				</div>
+			<div class="flex flex-col items-center text-center gap-6">
 
-			</section>
 
-			<!-- CONTACT -->
-			<section id="contact"
-				class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-3xl mx-auto px-4 py-16">
+				<i class="devicon-java-plain colored text-6xl hover:scale-110 transition"></i>
 
-				<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-10">CONTACT</h2>
 
-				<form class="space-y-4">
+				<p class="text-white/80 text-lg md:text-xl leading-relaxed mb-6">
+					Veille régulière sur Java : compréhension du langage, amélioration des bonnes pratiques
+					et exploration de ses écosystèmes backend.
+				</p>
 
-					<input type="text" placeholder="Nom" class="w-full p-3 rounded bg-white/10 outline-none">
+			</div>
+		</section>
 
-					<input type="email" placeholder="Email" class="w-full p-3 rounded bg-white/10 outline-none">
+		<section id="contact"
+			class=" reveal-right opacity-0 translate-x-20 transition-all duration-1000 ease-out max-w-3xl mx-auto px-4 py-16">
 
-					<textarea placeholder="Message" class="w-full p-3 rounded bg-white/10 outline-none h-32"></textarea>
+			<h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-10">CONTACT</h2>
 
-					<button type="submit"
-						class="bg-orange-300 text-[#061423] px-6 py-2 rounded font-bold hover:bg-white transition">
-						Envoyer
-					</button>
+			<form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
 
-				</form>
-			</section>
+				<!-- TA CLÉ WEB3FORMS -->
+				<input type="hidden" name="access_key" value="48fb4c2b-a2d1-479d-9f88-c37fb6863584">
+
+				<!-- optionnel -->
+				<input type="hidden" name="subject" value="Nouveau message portfolio">
+				<input type="hidden" name="from_name" value="Portfolio Brian">
+
+				<input type="text" name="name" placeholder="Nom" class="w-full p-3 rounded bg-white/10 outline-none"
+					required>
+
+				<input type="email" name="email" placeholder="Email" class="w-full p-3 rounded bg-white/10 outline-none"
+					required>
+
+				<input type="checkbox" name="botcheck" class="hidden">
+
+				<textarea name="message" placeholder="Message" maxlength="500"
+					class="w-full p-3 rounded bg-white/10 outline-none h-32" required></textarea>
+
+				<button type="submit"
+					class="bg-orange-300 text-[#061423] px-6 py-2 rounded font-bold hover:bg-white transition">
+					Envoyer
+				</button>
+
+			</form>
+		</section>
 
 	</main>
 
-	<!-- FOOTER -->
+
 	<footer class="text-center py-6 border-t border-white/10">
 		<p class="text-white/60">Brian Farnier</p>
 	</footer>

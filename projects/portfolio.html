@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-[#061423] text-white">
+
     <!-- HEADER -->
     <header class="w-full py-4 border-b border-white/10">
         <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
@@ -47,16 +48,15 @@
 
         </div>
     </header>
-    <section class="max-w-5xl mx-auto px-4 py-10 text-center">
+
+    <section
+        class="reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out max-w-5xl mx-auto px-4 py-10 text-center">
 
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
-            Portfolio
+            Mon Portfolio
         </h1>
 
-        <!-- <div class="flex justify-center">
-            <img src="image/logo_uji.png" alt="Stack du projet"
-                class="w-full max-w-md rounded-xl shadow-lg mb-6 object-contain">
-        </div> -->
+
 
         <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
             Stack utilisée sur le projet
@@ -78,7 +78,8 @@
     </section>
 
     <!-- Le projet  -->
-    <section class="max-w-6xl mx-auto px-4 py-10">
+    <section
+        class=" reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out max-w-6xl mx-auto px-4 py-10">
 
         <h2 class="text-2xl text-orange-300 mb-6 md:text-3xl font-bold text-orange-300 mb-10">Le projet</h2>
 
@@ -86,28 +87,71 @@
 
             <!-- TEXTE -->
             <p class="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl">
-                Lors de mon stage au sein de l’association ICATY, j’ai participé au développement d’une application
-                mobile
-                et web complète dans un contexte réel de situation client/développeur.
-                Ma mission principale était de concevoir l’application « Un jour internet », de la conception jusqu’au
-                déploiement.
+                Ce portfolio a été conçu pour présenter mes projets, mes compétences et mon évolution en développement
+                web/mobile.
+                Il reflète ma manière de travailler : proposer des interfaces claires, structurées et efficaces.
 
-                J’ai travaillé sur le back-end avec la création d’une API et la gestion de la base de données, ainsi que
-                sur
-                le front-end mobile et le back-office web destiné aux administrateurs.
-
-                Cette application a pour objectif de sensibiliser les personnes âgées aux usages du numérique et de
-                renforcer leur sécurité en ligne.
-
-                Elle propose un mot par jour, accompagné d’une explication simple et accessible.
+                À travers ce projet, j’ai cherché à créer une vitrine professionnelle et accessible,
+                tout en mettant en pratique mes connaissances en front-end, back-end et en organisation de projet.
 
             </p>
+            <!-- BOUTON GITHUB -->
+            <a href="https://github.com/Disl11/portfolio-" target="_blank"
+                class="inline-block bg-orange-300 text-[#061423] px-4 py-2 rounded-lg font-bold hover:bg-white transition">
+                Voir repositorie GitHub
+            </a>
 
 
         </div>
 
     </section>
 
+    <!-- choix des stack  -->
+    <section
+        class=" reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out max-w-5xl mx-auto px-4 py-16">
+
+        <h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-6 text-center">
+            Choix techniques
+        </h2>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center">
+            J’ai choisi d’utiliser HTML, CSS et JavaScript afin de garder un contrôle total
+            sur le projet et de simplifier son déploiement.
+
+            Cette approche m’a permis de me concentrer sur les fondamentaux du développement web,
+            tout en assurant une structure claire, maintenable et conforme aux bonnes pratiques.
+        </p>
+
+    </section>
+    <section
+        class=" reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out max-w-5xl mx-auto px-4 py-16">
+
+        <h2 class="text-2xl md:text-3xl font-bold text-orange-300 mb-6 text-center">
+            Arborescence du projet
+        </h2>
+
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center mb-10">
+            Le projet est structuré de manière claire afin de faciliter la maintenance, la lisibilité du code
+            et l’évolution de l’application.
+        </p>
+
+        <!-- ARBORESCENCE -->
+        <pre class="bg-white/5 text-white/70 p-6 rounded-xl text-sm md:text-base overflow-x-auto">
+/portfolio
+├── index.html
+├── about/
+│   └── about.html
+├── projects/
+│   ├── breakdanet.html
+│   |── unjourinternet.html
+│   └── portfolio.html
+├── assets/
+│   └── index.js
+    </pre>
+
+    </section>
+
+    <script src="/assets/index.js"></script>
 </body>
 
 </html>
